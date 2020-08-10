@@ -1,0 +1,49 @@
+body {
+font-family: italic;
+}
+
+.nav {
+display: flex;
+justify-content: flex-end;
+background: #3EC63C;
+}
+
+.nav a {
+color: #fff;
+padding: 15px 10px;
+text-decoration: none;
+text-align: center;
+}
+
+.nav a:hover {
+background: #A1FCA0;
+opacity: .7;
+}
+
+@media (min-width: 1025px) and (max-width:1824px) and (orientation: landscape) {
+.nav {
+  flex-direction: space-around;
+  font-size: 35px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1025px) {
+.nav {
+  flex-direction: space-around;
+  font-size: 30px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 641px) {
+.nav {
+  flex-direction: column;
+  font-size: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+.nav {
+  flex-direction: column;
+  font-size: 15px;
+  }
+}
